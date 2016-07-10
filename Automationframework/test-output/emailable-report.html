@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">ebaysuite</th></tr><tr><td><a href="#t0">functTest</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">4</td><td class="num">6,149</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ebaysuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">functTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.test.HomePageTest</td><td><a href="#m0">Action1</a></td><td rowspan="1">1468113832350</td><td rowspan="1">1479</td></tr><tr class="failedeven"><td><a href="#m1">loginlink</a></td><td rowspan="1">1468113833947</td><td rowspan="1">1494</td></tr><tr class="failedeven"><td><a href="#m2">navbar1</a></td><td rowspan="1">1468113835448</td><td rowspan="1">172</td></tr><tr class="failedeven"><td><a href="#m3">screenshot2</a></td><td rowspan="1">1468113836219</td><td rowspan="1">2214</td></tr><tr><th colspan="4">functTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.HomePageTest</td><td><a href="#m4">Testsociallinks</a></td><td rowspan="1">1468113833834</td><td rowspan="1">97</td></tr></tbody></table><h2>functTest</h2><h3 id="m0">com.test.HomePageTest#Action1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ClassCastException: com.util.pageDriver cannot be cast to org.openqa.selenium.interactions.HasInputDevices
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:44)
+	at com.page.HomePage.actions1(HomePage.java:51)
+	at com.test.HomePageTest.Action1(HomePageTest.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.test.HomePageTest#loginlink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&amp;ru=http%3A%2F%2Fwww.ebay.com%2F] but found [https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&amp;ru=]
+	at com.test.HomePageTest.loginlink(HomePageTest.java:25)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.test.HomePageTest#navbar1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: The given selector //a[@class=&apos;rt&apos; is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //a[@class=&apos;rt&apos; because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 132 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;amits-MacBook-Pro.local&apos;, ip: &apos;10.0.0.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.3&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=xpath, value=//a[@class=&apos;rt&apos;}
+Session ID: 08bb817f-645b-5341-b746-838c5eded5dd
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:504)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at com.util.pageDriver.findElements(pageDriver.java:70)
+	at com.page.HomePage.navbar(HomePage.java:41)
+	at com.test.HomePageTest.navbar1(HomePageTest.java:30)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //a[@class=&apos;rt&apos; is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //a[@class=&apos;rt&apos; because of the following error:
+SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;amits-MacBook-Pro.local&apos;, ip: &apos;10.0.0.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10744)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementsInternal_(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10802)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElements(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10806)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.test.HomePageTest#screenshot2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Cannot find elements when the selector is null
+	at org.openqa.selenium.By.cssSelector(By.java:145)
+	at com.util.Locators.get(Locators.java:64)
+	at com.util.pageDriver.findElement(pageDriver.java:67)
+	at com.page.HomePage.windowHandleEx(HomePage.java:78)
+	at com.test.HomePageTest.screenshot2(HomePageTest.java:34)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.test.HomePageTest#Testsociallinks</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

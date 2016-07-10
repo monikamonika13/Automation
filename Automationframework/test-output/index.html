@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-ebaysuite">
+              <span class="suite-name border-failed">ebaysuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-ebaysuite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-ebaysuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-ebaysuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-ebaysuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-ebaysuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-ebaysuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-ebaysuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ebaysuite" class="hide-methods failed suite-ebaysuite"> (hide)</a> <!-- hide-methods failed suite-ebaysuite -->
+                      <a href="#" panel-name="suite-ebaysuite" class="show-methods failed suite-ebaysuite"> (show)</a> <!-- show-methods failed suite-ebaysuite -->
+                    </span>
+                    <div class="method-list-content failed suite-ebaysuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ebaysuite" title="com.test.HomePageTest" hash-for-method="Action1">Action1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ebaysuite" title="com.test.HomePageTest" hash-for-method="loginlink">loginlink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ebaysuite" title="com.test.HomePageTest" hash-for-method="navbar1">navbar1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ebaysuite" title="com.test.HomePageTest" hash-for-method="screenshot2">screenshot2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ebaysuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ebaysuite" class="hide-methods passed suite-ebaysuite"> (hide)</a> <!-- hide-methods passed suite-ebaysuite -->
+                      <a href="#" panel-name="suite-ebaysuite" class="show-methods passed suite-ebaysuite"> (show)</a> <!-- show-methods passed suite-ebaysuite -->
+                    </span>
+                    <div class="method-list-content passed suite-ebaysuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ebaysuite" title="com.test.HomePageTest" hash-for-method="Testsociallinks">Testsociallinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ebaysuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ebaysuite" class="panel ebaysuite">
+          <div class="suite-ebaysuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Action1">
+                  </a> <!-- Action1 -->
+                  <span class="method-name">Action1</span>
+                  <div class="stack-trace">java.lang.ClassCastException: com.util.pageDriver cannot be cast to org.openqa.selenium.interactions.HasInputDevices
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:44)
+	at com.page.HomePage.actions1(HomePage.java:51)
+	at com.test.HomePageTest.Action1(HomePageTest.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginlink">
+                  </a> <!-- loginlink -->
+                  <span class="method-name">loginlink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&amp;ru=http%3A%2F%2Fwww.ebay.com%2F] but found [https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&amp;ru=]
+	at com.test.HomePageTest.loginlink(HomePageTest.java:25)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navbar1">
+                  </a> <!-- navbar1 -->
+                  <span class="method-name">navbar1</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: The given selector //a[@class=&apos;rt&apos; is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //a[@class=&apos;rt&apos; because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 132 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;amits-MacBook-Pro.local&apos;, ip: &apos;10.0.0.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.3&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=xpath, value=//a[@class=&apos;rt&apos;}
+Session ID: 08bb817f-645b-5341-b746-838c5eded5dd
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:504)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at com.util.pageDriver.findElements(pageDriver.java:70)
+	at com.page.HomePage.navbar(HomePage.java:41)
+	at com.test.HomePageTest.navbar1(HomePageTest.java:30)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //a[@class=&apos;rt&apos; is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //a[@class=&apos;rt&apos; because of the following error:
+SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;amits-MacBook-Pro.local&apos;, ip: &apos;10.0.0.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10744)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementsInternal_(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10802)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElements(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10806)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/w1/zk519xfd7qzdnhzxzqxx4lnm0000gn/T/anonymous3175544878783795339webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="screenshot2">
+                  </a> <!-- screenshot2 -->
+                  <span class="method-name">screenshot2</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot find elements when the selector is null
+	at org.openqa.selenium.By.cssSelector(By.java:145)
+	at com.util.Locators.get(Locators.java:64)
+	at com.util.pageDriver.findElement(pageDriver.java:67)
+	at com.page.HomePage.windowHandleEx(HomePage.java:78)
+	at com.test.HomePageTest.screenshot2(HomePageTest.java:34)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ebaysuite-class-failed -->
+          <div class="suite-ebaysuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Testsociallinks">
+                  </a> <!-- Testsociallinks -->
+                  <span class="method-name">Testsociallinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ebaysuite-class-passed -->
+        </div> <!-- panel ebaysuite -->
+        <div panel-name="test-xml-ebaysuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/Amit/Documents/test/Automationframework/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ebaysuite&quot;&gt;
+  &lt;test name=&quot;functTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- functTest --&gt;
+&lt;/suite&gt; &lt;!-- ebaysuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ebaysuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ebaysuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">functTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ebaysuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ebaysuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ebaysuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ebaysuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ebaysuite');
+function tableData_ebaysuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'screenshot2')
+data.setCell(0, 2, 'com.test.HomePageTest')
+data.setCell(0, 3, 2214);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginlink')
+data.setCell(1, 2, 'com.test.HomePageTest')
+data.setCell(1, 3, 1494);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Action1')
+data.setCell(2, 2, 'com.test.HomePageTest')
+data.setCell(2, 3, 1479);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'navbar1')
+data.setCell(3, 2, 'com.test.HomePageTest')
+data.setCell(3, 3, 172);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Testsociallinks')
+data.setCell(4, 2, 'com.test.HomePageTest')
+data.setCell(4, 3, 97);
+window.suiteTableData['ebaysuite']= { tableData: data, tableDiv: 'times-div-ebaysuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <div id="times-div-ebaysuite">
+              </div> <!-- times-div-ebaysuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ebaysuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ebaysuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ebaysuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ebaysuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeclass</span>
+                <span class="method-start">5006 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Action1</span>
+                <span class="method-start">5058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Testsociallinks</span>
+                <span class="method-start">6542 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginlink</span>
+                <span class="method-start">6655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">navbar1</span>
+                <span class="method-start">8156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">screenshot2</span>
+                <span class="method-start">8927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">11212 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
